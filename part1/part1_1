@@ -1,0 +1,9 @@
+Script started on 2021-07-04 13:30:17+03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="140" LINES="29"]
+➜ part1 (master) ✗ script testdocker container ls -aps -a
+CONTAINER ID   IMAGE	 COMMAND		  CREATED	       STATUS			   PORTS     NAMES
+500f754f4211   nginx	 "/docker-entrypoint.…"   About a minute ago   Exited (0) 46 seconds ago	     admiring_nightingale
+5d7f979e9e35   nginx	 "/docker-entrypoint.…"   About a minute ago   Exited (0) 46 seconds ago	     angry_hodgkin
+46b18f4aea3f   nginx	 "/docker-entrypoint.…"   About a minute ago   Up About a minute	   80/tcp    festive_poitras
+➜ part1 (master) ✗ exit
+
+Script done on 2021-07-04 13:30:24+03:00 [COMMAND_EXIT_CODE="0"]
