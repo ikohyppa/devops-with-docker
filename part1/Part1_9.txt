@@ -1,0 +1,2 @@
+$ touch log.txt
+$ docker run -v $(pwd)/log.txt:/usr/src/app/text.log devopsdockeruh/simple-web-service
