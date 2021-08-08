@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+  frontend:
+    image: hello-frontend:with-env
+    ports:
+      - 5000:5000
+  backend:
+    image: hello-backend:with-env
+    ports:
+      - 8080:8080
+    environment:
+      - REDIS_HOST=redis
+  redis:
+    image: redis:latest
