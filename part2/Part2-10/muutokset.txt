@@ -1,0 +1,5 @@
+
+* BE Dockerfile:sta poistettiin portti 5000 riviltä ENV REQUEST_ORIGIN=http://localhost:5000
+* FE Dockerfile:sta poistettiin portti 8080 riviltä ENV REACT_APP_BACKEND_URL=http://localhost:8080
+* buildattiin uudet BE ja FE images tagilla :2.10 ja otettiin nämä käyttöön docker-compose.yml tiedostossa
+* nginx.conf tiedostoon lisättiin location /ping ja /messages
