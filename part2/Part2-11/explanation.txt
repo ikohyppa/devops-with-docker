@@ -1,0 +1,10 @@
+* I used my high-low-dice project.
+* The project has two publicgit repos:
+    - https://github.com/ikohyppa/high-low-dice-server
+    - https://github.com/ikohyppa/high-low-dice-client
+
+* I added Dockerfile to both and docker-compose.yml to server repo.
+* Dockerfiles and docker-compose.yml can be found here in BE and FE directories.
+* Repos should be cloned under a common directory.
+* Then in server directory command 'docker-compose up' starts both server and client in development state.
+ 

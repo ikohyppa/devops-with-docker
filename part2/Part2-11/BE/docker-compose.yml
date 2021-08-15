@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  hld-server-env:
+    build: .
+    command: npm run server
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/usr/src/app/server
+      - node_modules_server:/usr/src/app/server/node_modules
+    container_name: hld-server-dev-env
+  hld-client-env:
+    build: ../high-low-dice-client/client
+    command: npm start
+    ports:
+      - 3000:3000
+    stdin_open: true
+    volumes:
+      - ../high-low-dice-client/client:/usr/src/app/client
+      - node_modules_client:/usr/src/app/client/node_modules
+    container_name: hld-client-dev-env
+
+volumes:
+  node_modules_server:
+  node_modules_client:
