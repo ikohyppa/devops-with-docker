@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  builder:
+    build: .
+    environment:
+      REPO_ADDRESS: ${REPO_ADDRESS}
+      REPO_NAME: ${REPO_NAME}
+      DH_USER: ${DH_USER}
+      DH_PW: ${DH_PW}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    container_name: docker-builder
