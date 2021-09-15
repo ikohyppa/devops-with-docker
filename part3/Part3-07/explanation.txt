@@ -1,0 +1,7 @@
+
+I used my randon-button project I created for exercise 1.15.
+https://github.com/ikohyppa/random-button/blob/main/Dockerfile
+https://hub.docker.com/repository/docker/ikohyppa/random-button
+
+Dockerfile.before is the original Dockerfile and Dockerfile.after is the optimized one.
+Docker image size difference was 465MB
